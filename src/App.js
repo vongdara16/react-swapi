@@ -1,12 +1,16 @@
 import './App.css';
-// import StarshipList from './components/StarshipList';
+import { Routes, Route } from 'react-router-dom'
+import StarshipList from './pages/StarshipList/StarshipList';
 
 function App() {
   return (
-    <div className="">
+    <>
       <h1>Star Wars Starships</h1>
-      {/* <StarshipList /> */}
-    </div>
+      <Routes>
+        <Route path='/' element={<StarshipList />} />
+
+      </Routes>
+    </>
   );
 }
 
