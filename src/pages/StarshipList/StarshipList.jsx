@@ -1,16 +1,15 @@
 import { useState, useEffect } from 'react';
 import { getAllStarships } from '../../services/sw-api';
 import { Link } from 'react-router-dom'
-
+import StarshipPage from '../../components/StarshipPage/StarshipPage';
 
 const StarshipList = (props) => {
   const [starships, setStarships] = useState([])
   
   useEffect(() => {
-    // console.log('component mounted')
     getAllStarships()
     .then(starshipData => setStarships(starshipData.results))
-  })
+  }, [])
 
   return (  
     <>
@@ -18,11 +17,11 @@ const StarshipList = (props) => {
       {starships.length ?
       <>
         {starships.map(starship => 
-          <Link to={`/${starship.name}`} key={starship.edited}>
-            Name: {starship.name}
-          </Link>
+          <StarshipPage key={starship.edited} starship={starship} state={{starship}} />
+          // <Link to={`/starship`} key={starship.edited} state={{starship}}>
+          //   Name: {starship.name} <br />
+          // </Link>
         )}
-      
       </>
       :
       <>
