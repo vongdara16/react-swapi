@@ -5,6 +5,11 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  min-width: 100vh;
+  min-height: 100vh;
+  background-image: url(/public/star-wars-backgrounds-14.jpeg);
+  background-position: center;
+  background-size: cover;
 }
 
 code {

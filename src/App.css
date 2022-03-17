@@ -1,38 +1,54 @@
-/* .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+#title {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-content: center;
+  background-color: black;
+  color: white;
+  margin: 0 auto;
+  padding: 10px;
+  font-size: 3.0rem;
+}
+
+#list-title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin: 0 auto;
+  margin-top: 20px;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+#starship-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  margin-top: 20px;
+  column-count: 4;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-} */
+#starship-link {
+  font-size: 1.8rem;
+  background-color: #1D3461;
+  /* border: 4px solid black; */
+  margin: 15px;
+  width: 400px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+  border-radius: 10px;
+}
+
+#starship-link:hover {
+  background-color: #1F487E;
+  box-shadow: 0px 0px 20px white;
+  font-weight: bold;
+}
+
+#load-ships {
+  color: white;
+  text-align: center;
+  font-size: 3.0rem;
+}

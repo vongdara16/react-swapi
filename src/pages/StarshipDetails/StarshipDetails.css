@@ -1,0 +1,54 @@
+#ship-detail-page {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin-top: 20vh;
+}
+
+#starship-details {
+  background-color: #1D3461;
+  width: 500px;
+  height: 350px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px white;
+  padding: 20px;
+  color: white;
+  font-size: 1.2rem;
+}
+
+#starship-name {
+  display: flex;
+  justify-content: center;
+  font-size: 2.0rem;
+  padding: 0;
+  margin: 0 auto;
+}
+
+#starship-model {
+  padding: 0;
+  margin: 0;
+  margin-top: 10px;
+}
+
+#starship-pilot-list {
+  text-decoration: underline;
+}
+
+#return-link {
+  color: red;
+  background-color: black;
+  padding: 5px;
+  border-radius: 7px;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+#return-link:hover {
+  color: black;
+  background-color: red;
+}
+
+#starship-load {
+  color: white;
+  font-size: 2.8rem;
+}

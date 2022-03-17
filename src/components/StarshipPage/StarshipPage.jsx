@@ -4,8 +4,8 @@ const StarshipPage = (props) => {
 
   return (  
     <>
-      <Link to={`/starship`} key={props.starship.edited} state={props.starship} >
-        Name: {props.starship.name} <br />
+      <Link to={`/starship`} key={props.starship.edited} state={props.starship} id='starship-link'>
+        {props.starship.name}
       </Link>
     </>
 
