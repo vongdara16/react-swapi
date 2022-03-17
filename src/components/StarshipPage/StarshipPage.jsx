@@ -8,7 +8,6 @@ const StarshipPage = (props) => {
         {props.starship.name}
       </Link>
     </>
-
   );
 }
  
